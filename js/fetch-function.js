@@ -1,8 +1,7 @@
 export function fetch() {
   const fetch_quote = fetch("https://thatsthespir.it/api");
-
   fetch_quote()
-    .then((response) => response.json())
+    .then((fetch_quote) => fetch_quote.json())
     .then((json) => {
       const div = document.createElement("div");
       const quote = document.createElement("blockquote");

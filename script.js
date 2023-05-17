@@ -1,3 +1,4 @@
 import { fetch } from "./js/fetch-function.js";
 
-fetch();
+const button = document.querySelector(".button");
+button.addEventListener("click", () => fetch());
